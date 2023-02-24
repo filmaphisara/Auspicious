@@ -1,0 +1,55 @@
+<!doctype html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>happiness</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Dancing+Script:wght@500;600&family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500&family=Niramit:wght@200;300&family=Noto+Serif+Thai:wght@300;400&family=Sarabun:wght@200;300&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+   </head>
+  <body>
+      <section class="sub-header">
+          <nav>
+            <a href="index.html"><img src="โลโก้ต้น.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="เกี่ยวกับ.index.html">เกี่ยวกับ</a></li>
+                <li><a href="ลักษณะ.index.html">ลักษณะ</a></li>
+                <li><a href="ประโยชน์.index.html">ประโยชน์</a></li>
+                <li><a href="ความเป็นมงคล.index.html">ความเป็นมงคล</a></li>
+                <li><a href="สรรพคุณ.index.html">สรรพคุณ</a></li>
+                <li><a href="การปลูกและการดูแล.index.html">การปลูกและดูแล</a></li>
+            </ul>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+          <h1>สรรพคุณ</h1>
+      </section>
+     <!--properties-->
+<section class="properties">
+  <h1>สรรพคุณเสน่ห์จันทร์แดง</h1>
+  <div class="properties-cols">
+  <p>– ทุกส่วนมีสารพิษ ใช้เป็นยาพิษเบื่อปลา<br>
+    – ทุกส่วนมีสารพิษ หากรับประทานหรือต้มดื่มจะทำให้อาเจียน<br>
+    – ทุกส่วนใช้เป็นยาภายนอก ใช้ทารักษาแผล โดยเฉพาะแผลเปื่อย แผลผุพองมีน้ำหนอง<br>
+    – หัวหรือเหง้าใช้เป็นยาภายนอก โดยบดขยำทาแก้โรคไขข้ออักเสบ<br>
+    </p>
+  </div>
+  <div class="happiness">
+    <p>Auspicious tree of happiness  ต้นไม้แห่งสุขヅ </p>
+  </div> 
+  
+<!----javaScript for toggle Menu---->
+      <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right = "0";
+        }
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+        }
+      </script>
+  </body>
+</html>

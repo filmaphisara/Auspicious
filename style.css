@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif Thai', serif;
+}
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./istockphoto-1141484289-612x612.jpg);
+    height:  100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+ }
+ nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+ }
+ nav img{
+    width: 150px;
+ }
+ .nav-links{
+    flex: 1;
+    text-align: right;
+ }
+ .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    min-height: 100px;
+    margin-right: 40px;
+ }
+ .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+ }
+ .nav-links ul li::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+ }
+ .nav-links ul li:hover:after{
+    width: 100%;
+ }
+
+.tezt{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center
+}
+
+.tezt h1{
+    font-size: 68px;
+    text-align: center
+}
+.tezt p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.heor-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center
+}
+.heor-btn:hover{
+    border: 1px solid #aa0707;
+    background: #aa0707;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    nav img{
+        border-top: 10px;
+        width: 90px;
+     }
+    .tezt h1{
+        font-size: 18px;
+    }
+    .tezt p{
+        font-size: 16px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #aa0707;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 10px;
+    }
+}
+
+/*--- course ---*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.course p{
+    color: #2f2e2e;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    text-align: center;
+}
+/*--- campus ---*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.campus-cols{
+flex-basis: 52%;
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+text-align: center
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.campus p{
+    color: #2f2e2e;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    text-align: center;
+}
+.row{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.campus-col{
+    flex-basis: 52%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+}
+h3{
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: 600;
+}
+p{
+    color: #2f2e2e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.campus-cola{
+    flex-basis: 52%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+}
+.ro{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .campus-colb{
+    flex-basis: 52%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+    }
+    h4{
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    p{
+        color: #2f2e2e;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+.yo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.campus-coll img{
+    width:500;
+    height:400;
+}
+h2{
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: 600;
+}
+p{
+    color: #2f2e2e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+/*--- nature ---*/
+.nature{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.nature-coll{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #2f2e2e;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/*--- sense ---*/
+.sense{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.sense p{
+    color: #2f2e2e;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    text-align: center;
+}
+/*--- properties ---*/
+.properties{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.properties-cols{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+p{
+    color: #2f2e2e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/*--- plant ---*/
+.plant{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.plant-cols{
+    flex-basis: 52%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+}
+.plant-cols p{
+    color: #2f2e2e;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    text-align: center;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #2f2e2e;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.happiness{
+    flex-basis: 52%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+}
+.happiness p{
+    color: #2f2e2e;
+    display: flex;
+    display: inline-block;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .course img{
+        width:100%;
+        height:200%;
+    }
+    .row{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .ro{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .campus-colb img{
+        width:100%;
+        height:200%;
+    }
+    .campus-colb p{
+        color: #2f2e2e;
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: right 10px;
+        text-align: left 10px;
+    }
+    .campus-cols{
+        width: 100%;
+        border-radius: 10px;
+        text-align: left;
+        text-align: center;
+    }
+    .campus-coll img{
+            width:100%;
+            height:100%;
+        }
+    h4{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .campus-cola img{
+        width:100%;
+        height:100%;
+    }
+    .campus-col img{
+        width:100%;
+        height:100%;
+    }
+    .campus-cols img{
+        width:100%;
+        height:100%;
+    }
+    .nature{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .nature-coll{
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    .sense{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .sense-coll img{
+        width:100%;
+        height:100%;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .yo{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .campus-coll{
+        width: 100%;
+        border-radius: 10px;
+        text-align: left;
+        text-align: center;
+        left: auto;
+    }
+}
+/*---เกี่ยวกับ---*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./istockphoto-1319223818-612x612.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
